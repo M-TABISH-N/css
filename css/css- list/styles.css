@@ -1,0 +1,65 @@
+/* a) Give a fixed width of 900px to cookie image */
+img.cookie-image {
+    width: 900px;
+}
+
+/* b) Style the unordered list (ul) to have circle markers and a different font */
+ul {
+    list-style-type: circle;
+    font-family: 'Georgia', serif; /* Replace with your desired font */
+}
+
+/* c) Apply a custom background image to the ordered list (ol) as the list item marker */
+ol {
+    list-style: none; /* Remove default markers */
+}
+
+ol li {
+    background-image: url('path/to/your/custom-marker.png'); /* Replace with your image path */
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px; /* Adjust based on your image size */
+}
+
+/* d) Position the list item markers outside the list items for both ordered and unordered lists */
+ul, ol {
+    list-style-position: outside;
+}
+
+/* e) Increase the font size of the ingredients' list items */
+ul.ingredients li {
+    font-size: 18px; /* Adjust as needed */
+}
+
+/* f) Add a margin and padding to the header for spacing */
+header {
+    margin: 20px 0;
+    padding: 15px;
+}
+
+/* g) Set a unique background color to every odd list item in the preparation steps */
+ol.preparation-steps li:nth-child(odd) {
+    background-color: #f0f0f0; /* Replace with your desired color */
+}
+
+/* h) Apply a custom font family to the header */
+header {
+    font-family: 'Arial', sans-serif; /* Replace with your desired font */
+}
+
+/* i) Adjust the line height of the ingredients' list items */
+ul.ingredients li {
+    line-height: 1.6; /* Adjust as needed */
+}
+
+/* k) Add a subtle box shadow to the recipe details section and give it some padding */
+.recipe-details {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Adjust as needed */
+    padding: 20px;
+}
+
+/* k) Align the text in the ordered list to the right side and give it a width of 500px */
+ol.preparation-steps {
+    width: 500px;
+    text-align: right;
+}
