@@ -1,0 +1,68 @@
+/* Reset some default styles */
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Basic styles for the header */
+header {
+    position: fixed; /* Make the header stick to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Dark background for the header */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding around the header content */
+    z-index: 1000; /* Ensure the header is on top of other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Positioning the logo */
+.logo {
+    position: absolute; /* Position the logo absolutely within the header */
+    top: 10px; /* Adjust top position */
+    left: 20px; /* Adjust left position */
+    font-size: 24px; /* Larger font size for the logo */
+    font-weight: bold; /* Bold font for the logo */
+    color: #ff6347; /* Tomato color for the logo */
+}
+
+/* Positioning the navigation menu */
+nav {
+    position: relative; /* Relative positioning for the nav */
+    float: right; /* Float the nav to the right */
+    margin-top: 10px; /* Adjust top margin */
+}
+
+/* Styling the navigation list */
+nav ul {
+    display: flex; /* Use flexbox for horizontal layout */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between menu items */
+}
+
+nav ul li a {
+    color: #fff; /* White text color for links */
+    font-size: 16px; /* Font size for navigation links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Change color on hover */
+}
+
+/* Clear floats to prevent layout issues */
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Basic styles for the main content */
+main {
+    padding-top: 70px; /* Add padding to the top to account for the fixed header */
+}
